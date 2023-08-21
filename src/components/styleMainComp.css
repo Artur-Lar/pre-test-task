@@ -1,0 +1,559 @@
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/Bitter-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+img {
+  max-width: 100%; /* Максимальная ширина по контейнеру */
+  max-height: 100%; /* Максимальная высота по контейнеру */
+  width: auto; /* Автоматическая ширина */
+  height: auto; /* Автоматическая высота */
+}
+.container {
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100vw;
+}
+
+.header {
+  height: 1000px;
+  background: url(/src/components/images/Rectangle7.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  padding-top: 20px;
+  max-width: 100%;
+}
+.intro {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  width: 100%;
+  background: transparent;
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.logos img {
+  padding-bottom: 20px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*width: 1280px;*/
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 20px;
+}
+.logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-list-item {
+  display: inline-block;
+  margin-right: 40px;
+  text-decoration: none;
+  color: white;
+}
+.header__btn {
+  width: 207px;
+  height: 44px;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  margin-left: auto;
+  background-color: transparent;
+  border: white 1px solid;
+  cursor: pointer;
+}
+.header__btn img {
+  margin: 0;
+}
+.openHorizn {
+  font-family: "Bitter", sans-serif;
+  font-size: 64px;
+  font-weight: 200;
+  color: white;
+  width: 63%;
+  padding-top: 310px;
+  margin: 0;
+}
+.openHoriznPart {
+  font-weight: 600;
+}
+.estateChoose {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 32px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.6);
+  width: 43%;
+  margin: 0;
+}
+.aptChoose-btn {
+  width: 415px;
+  height: 44px;
+  background-color: white;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.text-and-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 89%;
+}
+.whyWe-container {
+  display: flex;
+}
+.imgVillage {
+  padding-top: 250px;
+  padding-left: 80px;
+}
+.whyWe {
+  font-family: "Bitter", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: white;
+}
+p {
+  margin: 0;
+}
+.individual {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Bitter", sans-serif;
+  font-size: 31px;
+  margin: 0;
+}
+
+.whyWeText {
+  padding-top: 240px;
+  padding-left: 80px;
+  width: 58%;
+}
+.whyWeText-itemBig {
+  color: #fff;
+  font-family: "Bitter", sans-serif;
+  font-size: 32px;
+  padding-top: 25px;
+}
+.whyWeText-itemSmall {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Bitter", sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  display: flex;
+}
+
+.whiteLine {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.whyWeText-itemSmall img {
+  display: flex;
+  justify-content: flex-end;
+}
+.arrow-in-whyWe {
+  margin-left: auto;
+}
+.item-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.long-button {
+  width: 100%;
+  margin-top: 40px;
+}
+.questions {
+  padding-top: 220px;
+}
+.quests {
+  margin-left: 80px;
+}
+.mortgage {
+  padding-top: 250px;
+}
+.mort-text {
+  padding-left: 80px;
+  width: 95%;
+}
+.short {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.mort-text-img {
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-between;
+  width: 94%;
+}
+.team {
+  padding-top: 230px;
+}
+.grey {
+  color: rgba(255, 255, 255, 0.6);
+  width: 40%;
+}
+.team-worker {
+  display: flex;
+  width: 88%;
+  justify-content: space-between;
+  margin-left: 80px;
+  padding-top: 80px;
+}
+.woker-description {
+  width: 57%;
+}
+.how-we-work {
+  padding-top: 250px;
+}
+.custom-list {
+  list-style: none;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+
+.custom-list-item {
+  counter-increment: custom-counter;
+  position: relative;
+  margin-bottom: 65px;
+  padding-left: 150px;
+}
+
+.custom-list-item::before {
+  content: counter(custom-counter);
+  display: grid;
+  font-family: "Bitter", sans-serif;
+  font-size: 64px;
+  width: 128px;
+  height: 128px;
+  text-align: center;
+  place-items: center;
+  background-color: transparent;
+  border: white 1px solid;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -47px;
+  left: -10px;
+}
+
+.custom-list-item::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: white;
+  top: 150px; /* Положение верхней точки линии */
+  left: 55px; /* Положение по горизонтали */
+  bottom: -84px; /* Вытягиваем линию вниз до следующего номера */
+}
+.custom-list li:last-child::after {
+  display: none; /* Не показываем линию у последнего элемента */
+}
+.our-company {
+  padding-left: 80px;
+  padding-top: 250px;
+  max-width: 90%;
+}
+.our-company-intro {
+  display: flex;
+  /*width: 100%;*/
+  justify-content: space-between;
+}
+.our-comp-text-small {
+  font-family: "Bitter", sans-serif;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.6);
+  width: 55%;
+}
+.our-comp-list {
+  font-family: "Bitter", sans-serif;
+  font-size: 32px;
+  width: 47%;
+  color: white;
+  margin-top: 40px;
+}
+.our-comp-list-item {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  margin-left: 20px;
+}
+.our-comp-text-p {
+  color: #fff;
+  font-family: "Bitter", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-top: 37px;
+}
+.consultation {
+  padding-top: 250px;
+  max-width: 90%;
+  padding-left: 80px;
+}
+.consult-btns {
+  padding-top: 80px;
+  display: flex;
+  padding-bottom: 400px;
+}
+.footer {
+  background-color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  padding: 134px 380px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.black-btn {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-FB-IG-Tw {
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+}
+.footer-texts {
+  display: flex;
+  margin: 0;
+}
+.footer-btns {
+  display: flex;
+  flex-direction: column;
+}
+.footer-shop-catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+.footer-logos-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-logo {
+  padding-top: 15px;
+}
+@media (max-width: 768px) {
+  .logo-list {
+    display: none;
+  }
+
+  .container {
+    position: relative;
+    background-color: black;
+    margin: 0 auto;
+    max-width: 395px;
+    width: 100%;
+  }
+  body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+  }
+  .team-worker {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+  .team-worker img {
+    width: 165px;
+  }
+  .imgVillage {
+    display: none;
+  }
+  .intro {
+    left: 20px;
+    top: 100px;
+  }
+  .nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header__btn {
+    font-size: 0;
+    width: auto;
+  }
+  .logos img {
+    padding: 0;
+  }
+  .openHorizn {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 40px;
+    padding-top: 200px;
+    width: 90%;
+  }
+  .estateChoose {
+    font-size: 20px;
+    width: auto;
+  }
+  .text-and-btn {
+    display: block;
+  }
+  .aptChoose-btn {
+    width: 95%;
+    margin-top: 40px;
+  }
+  .whyWeText {
+    padding-top: 40px;
+    padding-left: 20px;
+    width: auto;
+  }
+  .whyWe {
+    font-family: Noto Sans;
+    font-size: 40px;
+  }
+  .individual {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+  }
+  .whyWeText-itemBig {
+    font-size: 16px;
+  }
+  .whyWeText-itemSmall {
+    font-size: 10px;
+  }
+  .whyWeText-itemSmall {
+    overflow: hidden;
+    max-height: 50px;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .whyWeText-itemSmall.expanded {
+    max-height: none;
+  }
+  .woker-description img {
+    width: auto;
+    height: auto;
+  }
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .woker-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-container {
+    width: 95%;
+  }
+  .questions {
+    padding-top: 40px;
+  }
+  .quests {
+    margin-left: 20px;
+  }
+  .mortgage {
+    padding-top: 40px;
+  }
+  .mort-text {
+    padding-left: 20px;
+  }
+  .mort-text-img {
+    display: block;
+    padding-top: 0;
+  }
+  .shortLine {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .villa-img {
+    padding-left: 20px;
+  }
+  .team {
+    padding-top: 40px;
+  }
+  .grey {
+    width: 90%;
+  }
+  .how-we-work {
+    padding-top: 40px;
+  }
+  .fontSize32 {
+    font-size: 32px;
+  }
+  .custom-list {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .custom-list-item {
+    padding-left: 47px;
+    margin-bottom: 5px;
+  }
+  .custom-list-item::before {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    bottom: 6px;
+    left: -20px;
+  }
+  .custom-list-item::after {
+    top: 83px;
+    left: 5px;
+    bottom: -29px;
+  }
+  .our-company {
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+  .our-company-intro {
+    display: block;
+  }
+  .our-comp-text-small {
+    font-size: 20px;
+    width: auto;
+    padding-bottom: 30px;
+  }
+  .our-comp-list {
+    width: auto;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .our-comp-list-item {
+    font-size: 12px;
+  }
+  .our-comp-text-p {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .fontSize32 {
+    font-size: 32px;
+  }
+  .consultation {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+  .consult-btns {
+    display: block;
+    padding-top: 40px;
+  }
+  .footer {
+    padding: 20px;
+    display: block;
+  }
+  .footer-texts {
+    justify-content: space-between;
+  }
+  .footer-FB-IG-Tw {
+    justify-content: flex-start;
+  }
+  .footer-btns {
+    display: block;
+  }
+}

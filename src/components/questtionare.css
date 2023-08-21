@@ -1,0 +1,87 @@
+.quest-title {
+  color: #fff;
+  font-family: "Bitter", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.label {
+  font-weight: 200;
+  color: gray;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label.selected {
+  color: white;
+}
+.list-quest {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  width: 95%;
+}
+.question-indicator {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Bitter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+input[type="checkbox"] {
+  width: 48px;
+  height: 48px;
+  appearance: none;
+  border: 2px solid white;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background-color: white;
+  border: none;
+}
+input[type="checkbox"]:checked::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(/public/images/checkmark.png);
+  background-size: cover;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-width-630px {
+  width: 630px;
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .list-quest {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quest-title {
+    padding-top: 0;
+    font-size: 16px;
+  }
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+  }
+  .btn-width-630px {
+    width: 95%;
+  }
+  .wTxt {
+    font-size: 16px;
+  }
+}
