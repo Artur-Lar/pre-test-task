@@ -173,7 +173,7 @@ function MainComponent() {
       <div id="section2" className="questions">
         <p className="whyWe quests">ПРОЙДИТЕ ОПРОС</p>
         <p className="individual short quests">
-          чтобы мы смогли подобрать лучшие варианты для вас
+          чтобы мы смогли подобрать лучшие <br /> варианты для вас
         </p>
         <Questionnaire />
       </div>

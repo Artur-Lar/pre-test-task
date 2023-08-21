@@ -3,7 +3,7 @@
   font-family: "Bitter", sans-serif;
   font-size: 32px;
   font-weight: 400;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 .label {
@@ -33,6 +33,10 @@
   font-weight: 200;
   margin-top: 40px;
   margin-bottom: 10px;
+}
+.btns-quest {
+  display: flex;
+  margin-top: 95px;
 }
 input[type="checkbox"] {
   width: 48px;
@@ -83,5 +87,10 @@ input[type="checkbox"]:checked::after {
   }
   .wTxt {
     font-size: 16px;
+    margin-top: 5px;
+  }
+  .btns-quest {
+    display: block;
+    margin-top: 0;
   }
 }

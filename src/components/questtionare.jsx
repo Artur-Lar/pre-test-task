@@ -96,7 +96,7 @@ const Questionnaire = () => {
           style={{ width: `${progress}%`, height: "100%", background: "white" }}
         />
       </div>
-      <div>
+      <div className="btns-quest">
         <button className="aptChoose-btn btn-width-630px">
           Ответить на вопрос
         </button>
